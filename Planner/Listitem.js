@@ -4,7 +4,7 @@ import { View, Text, TouchableHighlight, StyleSheet } from 'react-native';
 
 
 const Listitem = ({ text, onPress, selected, ...props }) => (
-    <TouchableHighlight onPress={onPress}>
+    <TouchableHighlight onPress={onPress} underlayColor={'#808284'}>
         <View style={styles.row}>
             <Text style={styles.text}> {text} </Text>
             {selected ? <Text> Selected</Text> : null}
